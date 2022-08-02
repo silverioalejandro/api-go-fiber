@@ -1,0 +1,18 @@
+crear un proyecto
+    docker-compose run --rm app go mod init github.com/silverioalejandro/api-go-fiber
+
+para ejecutar comandos
+    docker-compose run --rm app
+
+instalar fiberv2
+    docker-compose run --rm app go get github.com/gofiber/fiber/v2
+
+
+correr progarma la primera vez
+    docker-compose run --rm app go run .
+
+correr con el docker
+    docker-compose up
+
+ 
+    
