@@ -1,3 +1,5 @@
+Vas hacer un excelente programador y ganar mucho dinero en dolares
+
 crear un proyecto
     docker-compose run --rm app go mod init github.com/silverioalejandro/api-go-fiber
 
