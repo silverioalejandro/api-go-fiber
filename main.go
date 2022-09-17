@@ -1,14 +1,17 @@
-
 package main
 
-import ...
-
+import (
+    "github.com/gofiber/fiber/v2"
+)
 
 func main() {
     app := fiber.New()
 
-    //INITIAL ROUTE
-    route.RouteInit(app)
-
-    app.Listen(addr:":8080")
+    app.Get("/", func(ctx *fiber.Ctx) error {
+        return ctx.JSON(fiber.Map{
+            "hello": "word",
+        })
+    })
+    
+    app.Listen(":3000")
 }
