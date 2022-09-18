@@ -1,7 +1,12 @@
 package route 
 
-import "github.com/gofiber/fiber/v2"
+import (
+	
+	"github.com/gofiber/fiber/v2"
+	
+	"go-fiber-gorm/handler"
+)
 
 func RouteInit(r *fiber.App) {
-	r.Get(path:"/user", handler.UserHandlerRead)
+	r.Get("/user", handler.UserHandlerRead)
 }

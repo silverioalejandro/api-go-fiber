@@ -7,11 +7,9 @@ import (
 func main() {
     app := fiber.New()
 
-    app.Get("/", func(ctx *fiber.Ctx) error {
-        return ctx.JSON(fiber.Map{
-            "hello": "word",
-        })
-    })
+    // INITIAL ROUTE
+
+    route.RouteInit(app)
     
     app.Listen(":3000")
 }
