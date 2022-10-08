@@ -1,15 +1,19 @@
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2"
+	"github.com/silverioalejandro/api-go-fiber/database"
+	"github.com/silverioalejandro/api-go-fiber/route"
 )
 
 func main() {
-    app := fiber.New()
+	//INITIAL DATABASE
+	database.DatabaseInit()
+	app := fiber.New()
 
-    // INITIAL ROUTE
+	// INITIAL ROUTE
 
-    route.RouteInit(app)
-    
-    app.Listen(":3000")
+	route.RouteInit(app)
+
+	app.Listen(":3000")
 }
